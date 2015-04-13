@@ -12,6 +12,11 @@
 		C3FFA7011ADB5975004E7DF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FFA7001ADB5975004E7DF2 /* Images.xcassets */; };
 		C3FFA7041ADB5975004E7DF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FFA7021ADB5975004E7DF2 /* LaunchScreen.xib */; };
 		C3FFA7101ADB5975004E7DF2 /* bluTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFA70F1ADB5975004E7DF2 /* bluTests.m */; };
+		C3FFA71B1ADB5995004E7DF2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFA71A1ADB5995004E7DF2 /* MainViewController.m */; };
+		C3FFA7241ADB5B78004E7DF2 /* DFBlunoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFA7211ADB5B78004E7DF2 /* DFBlunoDevice.m */; };
+		C3FFA7251ADB5B78004E7DF2 /* DFBlunoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFA7231ADB5B78004E7DF2 /* DFBlunoManager.m */; };
+		C3FFA72A1ADB5B89004E7DF2 /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFA7271ADB5B89004E7DF2 /* BLEDevice.m */; };
+		C3FFA72B1ADB5B89004E7DF2 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FFA7291ADB5B89004E7DF2 /* BLEUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,16 @@
 		C3FFA7091ADB5975004E7DF2 /* bluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FFA70E1ADB5975004E7DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FFA70F1ADB5975004E7DF2 /* bluTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bluTests.m; sourceTree = "<group>"; };
+		C3FFA7191ADB5995004E7DF2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C3FFA71A1ADB5995004E7DF2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C3FFA7201ADB5B78004E7DF2 /* DFBlunoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBlunoDevice.h; sourceTree = "<group>"; };
+		C3FFA7211ADB5B78004E7DF2 /* DFBlunoDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBlunoDevice.m; sourceTree = "<group>"; };
+		C3FFA7221ADB5B78004E7DF2 /* DFBlunoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBlunoManager.h; sourceTree = "<group>"; };
+		C3FFA7231ADB5B78004E7DF2 /* DFBlunoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBlunoManager.m; sourceTree = "<group>"; };
+		C3FFA7261ADB5B89004E7DF2 /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		C3FFA7271ADB5B89004E7DF2 /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		C3FFA7281ADB5B89004E7DF2 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		C3FFA7291ADB5B89004E7DF2 /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +91,14 @@
 		C3FFA6F81ADB5975004E7DF2 /* blu */ = {
 			isa = PBXGroup;
 			children = (
+				C3FFA71F1ADB5B46004E7DF2 /* bluno */,
 				C3FFA6FD1ADB5975004E7DF2 /* AppDelegate.h */,
 				C3FFA6FE1ADB5975004E7DF2 /* AppDelegate.m */,
 				C3FFA7001ADB5975004E7DF2 /* Images.xcassets */,
 				C3FFA7021ADB5975004E7DF2 /* LaunchScreen.xib */,
 				C3FFA6F91ADB5975004E7DF2 /* Supporting Files */,
+				C3FFA7191ADB5995004E7DF2 /* MainViewController.h */,
+				C3FFA71A1ADB5995004E7DF2 /* MainViewController.m */,
 			);
 			path = blu;
 			sourceTree = "<group>";
@@ -109,6 +127,21 @@
 				C3FFA70E1ADB5975004E7DF2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3FFA71F1ADB5B46004E7DF2 /* bluno */ = {
+			isa = PBXGroup;
+			children = (
+				C3FFA7261ADB5B89004E7DF2 /* BLEDevice.h */,
+				C3FFA7271ADB5B89004E7DF2 /* BLEDevice.m */,
+				C3FFA7281ADB5B89004E7DF2 /* BLEUtility.h */,
+				C3FFA7291ADB5B89004E7DF2 /* BLEUtility.m */,
+				C3FFA7201ADB5B78004E7DF2 /* DFBlunoDevice.h */,
+				C3FFA7211ADB5B78004E7DF2 /* DFBlunoDevice.m */,
+				C3FFA7221ADB5B78004E7DF2 /* DFBlunoManager.h */,
+				C3FFA7231ADB5B78004E7DF2 /* DFBlunoManager.m */,
+			);
+			name = bluno;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +193,7 @@
 				TargetAttributes = {
 					C3FFA6F51ADB5975004E7DF2 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = MA5BADG5AW;
 					};
 					C3FFA7081ADB5975004E7DF2 = {
 						CreatedOnToolsVersion = 6.3;
@@ -210,7 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FFA7241ADB5B78004E7DF2 /* DFBlunoDevice.m in Sources */,
+				C3FFA72B1ADB5B89004E7DF2 /* BLEUtility.m in Sources */,
 				C3FFA6FF1ADB5975004E7DF2 /* AppDelegate.m in Sources */,
+				C3FFA7251ADB5B78004E7DF2 /* DFBlunoManager.m in Sources */,
+				C3FFA72A1ADB5B89004E7DF2 /* BLEDevice.m in Sources */,
+				C3FFA71B1ADB5995004E7DF2 /* MainViewController.m in Sources */,
 				C3FFA6FC1ADB5975004E7DF2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +301,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -305,6 +345,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -329,9 +370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = blu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "52fd5bd6-1aae-40c9-a38a-e181b653b013";
 			};
 			name = Debug;
 		};
@@ -339,9 +383,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = blu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "52fd5bd6-1aae-40c9-a38a-e181b653b013";
 			};
 			name = Release;
 		};
@@ -398,6 +445,7 @@
 				C3FFA7151ADB5975004E7DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3FFA7161ADB5975004E7DF2 /* Build configuration list for PBXNativeTarget "bluTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +454,7 @@
 				C3FFA7181ADB5975004E7DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
